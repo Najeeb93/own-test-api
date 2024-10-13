@@ -1,8 +1,8 @@
 
 const Course = async () => {
-    let course = await fetch('http://localhost:3000/api/course')
-    course = await course.json();
-    console.log(course);
+    let res = await fetch('http://localhost:3000/api/course')
+    res = await res.json();
+    console.log(res);
 
     return (
         <div>
@@ -10,7 +10,7 @@ const Course = async () => {
             <h1 className="text-3xl text-fuchsia-800 font-bold underline bg-fuchsia-400 p-3 text-center">Courses</h1>
             <div className="grid grid-col-4 container mx-auto gap-4 mt-5 ">
                 {
-                    course.course.map((data) => (
+                    res.data?.map((data) => (
                         <div key={data.id} className="bg-fuchsia-100 border-2 border-fuchsia-600 rounded p-3 space-y-2">
                              <h1><span className=' font-bold'>Title: </span> {data.title}</h1>
                             <h1><span className=' font-bold'>Duration: </span> {data.duration}</h1>
@@ -28,3 +28,5 @@ const Course = async () => {
     )
     
 }
+
+export default Course;
