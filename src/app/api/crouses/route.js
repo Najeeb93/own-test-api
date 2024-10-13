@@ -20,5 +20,12 @@ const course = [
         timing: "11-1 pm",
         teacher: "Sir Shehzaad"
 
+    },
+    {
+        id: 4,
+        title: "Python",
+        duration: "3-4 Month",
+        timing: "4-6 pm",
+        teacher: "Sir Saad"
     }
 ]
