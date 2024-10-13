@@ -29,3 +29,9 @@ const course = [
         teacher: "Sir Saad"
     }
 ]
+export async function  GET(request) {
+    return Response.json({
+        course: course,
+        msg:"Courses Fetched Successfully"
+    })
+}
