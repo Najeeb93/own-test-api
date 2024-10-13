@@ -31,7 +31,7 @@ const course = [
 ]
 export async function  GET(request) {
     return Response.json({
-        course: course,
+        data: course,
         msg:"Courses Fetched Successfully"
     })
 }
