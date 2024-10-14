@@ -7,7 +7,7 @@ const Course = async () => {
     return (
         <div>
 
-            <h1 className="text-3xl text-fuchsia-800 font-bold underline bg-stone-400 p-3 text-center">Courses</h1>
+            <h1 className="text-3xl text-black font-bold underline bg-stone-400 p-3 text-center">Courses</h1>
             <div className="grid grid-col-4 container mx-auto gap-4 mt-5 ">
                 {
                     res.data?.map((data) => (
