@@ -11,7 +11,7 @@ const Course = async () => {
             <div className="grid grid-col-4 container mx-auto gap-4 mt-5 ">
                 {
                     res.data?.map((data) => (
-                        <div key={data.id} className="bg-fuchsia-100  border-purple-500 rounded p-3 space-y-2">
+                        <div key={data.id} className="bg-purple-100 border-purple-500 rounded p-3 space-y-2">
                              <h1><span className=' font-bold'>Title: </span> {data.title}</h1>
                             <h1><span className=' font-bold'>Duration: </span> {data.duration}</h1>
                             <h1><span className=' font-bold'>Timing: </span> {data.timing}</h1>
